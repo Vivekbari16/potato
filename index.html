@@ -48,31 +48,18 @@
         .no:hover {
             background-color: #6b7c7a; /* Darker on hover */
         }
-        .hidden {
-            display: none;
-        }
-        #message {
-            color: #8b5e3c;
-            font-size: 1.8em;
-            margin-top: 40px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
-    <h1>Do You Love Me? </h1>
+    <h1>Do You Love Me?</h1>
     <div class="buttons">
-        <button class="button yes" onclick="showMessage()">Yes</button>
+        <a href="loveMessage.html">
+            <button class="button yes">Yes</button>
+        </a>
         <button class="button no" onmouseover="moveButton()">No</button>
     </div>
-    <h2 class="hidden" id="message">I love you too!  You mean the world to me.  Thank you for being the most incredible part of my life. Sometimes, words don’t seem enough to express what I feel. But I want you to know, with every part of me, that I love you. I love you deeply, endlessly, and unconditionally.</h2>
 
     <script>
-        // Function to show the message when "Yes" is clicked
-        function showMessage() {
-            document.getElementById('message').classList.remove('hidden');
-        }
-
         // Function to move the "No" button when hovered over
         function moveButton() {
             const noButton = document.querySelector('.no');
